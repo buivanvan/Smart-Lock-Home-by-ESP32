@@ -39,5 +39,12 @@ Hệ thống đóng/mở khóa cửa tự động bằng ESP32. Các cách thứ
 
 
 Thay đổi thông tin của Wifi để kết nối với server MQTT ở hai đoạn mã này
+https://github.com/buivanvan/Smart-Lock-Home-by-ESP32/blob/main/Smart_Door_Lock.ino#L16-L17
 
+Thay đổi thông tin của broker MQTT tại:
+https://github.com/buivanvan/Smart-Lock-Home-by-ESP32/blob/main/Smart_Door_Lock.ino#L20-L25
+
+Nhận broker MQTT miễn phí tại https://www.hivemq.com/
+-> Create New Cluster -> Manage Cluster -> Có thể xem được thông tin cụ thể của broker MQTT
+<img width="2173" height="702" alt="image" src="https://github.com/user-attachments/assets/d59a827c-3db0-46b9-b089-79a40ca12a9d" />
 
