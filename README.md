@@ -54,6 +54,17 @@ Thay đổi thông tin của broker MQTT [tại:](https://github.com/buivanvan/S
 25  const char* mqtt_topic_pub = "vvan/in";</code>
 </pre>
 
+Đọc mã thẻ của bạn bằng file [Read_RFIDCard.ino](https://github.com/buivanvan/Smart-Lock-Home-by-ESP32/blob/main/Read_RFIDCard.ino) và thay đổi giá trị thẻ đúng để mở cửa [ở dòng này](https://github.com/buivanvan/Smart-Lock-Home-by-ESP32/blob/main/Smart_Door_Lock.ino#L42-L43). Hiện tại cho tối đa 2 thẻ RFID.
+<pre>
+<code>42  byte correctUID1[4] = {0x1A, 0xCC, 0xAC, 0x02};
+43  byte correctUID2[4] = {0x72, 0xE7, 0xA5, 0x41};</code>
+</pre>
+
+Thay đổi mật khẩu khi bấm trên Keyboard [tại:](https://github.com/buivanvan/Smart-Lock-Home-by-ESP32/blob/main/Smart_Door_Lock.ino#L63)
+<pre>
+<code>63  String correctPassword = "12345";</code>
+</pre>
+
 Nhận broker MQTT miễn phí tại https://www.hivemq.com/
 -> Create New Cluster -> Manage Cluster -> Có thể xem được thông tin cụ thể của broker MQTT
 <img width="2173" height="702" alt="image" src="https://github.com/user-attachments/assets/d59a827c-3db0-46b9-b089-79a40ca12a9d" />
