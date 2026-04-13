@@ -20,7 +20,7 @@ const char* password = "123456789";
 const char* mqtt_server = "de111748f2be41469be6279df3cf2b0a.s1.eu.hivemq.cloud";   // hoặc IP broker của bạn
 const int mqtt_port = 8883;
 const char* mqtt_user = "buivanvan";
-const char* mqtt_pass = "Van.bui6604";
+const char* mqtt_pass = "************";
 const char* mqtt_topic_sub = "vvan/out";
 const char* mqtt_topic_pub = "vvan/in";
 // ===== LED =====
