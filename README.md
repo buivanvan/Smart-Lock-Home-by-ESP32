@@ -39,6 +39,13 @@ Hệ thống đóng/mở khóa cửa tự động bằng ESP32. Các cách thứ
 
 
 Thay đổi thông tin của Wifi để kết nối với server MQTT ở hai đoạn mã này
+<pre>
+<code>
+16  const char* ssid = "HONOR500";
+17  const char* password = "123456789";
+</code>
+</pre>
+
 https://github.com/buivanvan/Smart-Lock-Home-by-ESP32/blob/main/Smart_Door_Lock.ino#L16-L17
 
 Thay đổi thông tin của broker MQTT tại:
