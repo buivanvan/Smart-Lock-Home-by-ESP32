@@ -38,14 +38,21 @@ Hệ thống đóng/mở khóa cửa tự động bằng ESP32. Các cách thứ
 |                     | Cathode          | GND        | |
 
 
-Thay đổi thông tin của Wifi để kết nối với server MQTT ở hai đoạn mã [này:](https://github.com/buivanvan/Smart-Lock-Home-by-ESP32/blob/main/Smart_Door_Lock.ino#L16-L17)
+Thay đổi thông tin của Wifi để kết nối với server MQTT ở [hai đoạn mã này:](https://github.com/buivanvan/Smart-Lock-Home-by-ESP32/blob/main/Smart_Door_Lock.ino#L16-L17)
 <pre>
 <code>16  const char* ssid = "HONOR500";
 17  const char* password = "123456789";</code>
 </pre>
 
-Thay đổi thông tin của broker MQTT tại:
-https://github.com/buivanvan/Smart-Lock-Home-by-ESP32/blob/main/Smart_Door_Lock.ino#L20-L25
+Thay đổi thông tin của broker MQTT [tại:](https://github.com/buivanvan/Smart-Lock-Home-by-ESP32/blob/main/Smart_Door_Lock.ino#L20-L25)
+<pre>
+<code>20  const char* mqtt_server = "de111748f2be41469be6279df3cf2b0a.s1.eu.hivemq.cloud";   // hoặc IP broker của bạn
+21  const int mqtt_port = 8883;
+22  const char* mqtt_user = "buivanvan";
+23  const char* mqtt_pass = "************";
+24  const char* mqtt_topic_sub = "vvan/out";
+25  const char* mqtt_topic_pub = "vvan/in";</code>
+</pre>
 
 Nhận broker MQTT miễn phí tại https://www.hivemq.com/
 -> Create New Cluster -> Manage Cluster -> Có thể xem được thông tin cụ thể của broker MQTT
