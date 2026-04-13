@@ -21,8 +21,8 @@ const char* mqtt_server = "de111748f2be41469be6279df3cf2b0a.s1.eu.hivemq.cloud";
 const int mqtt_port = 8883;
 const char* mqtt_user = "buivanvan";
 const char* mqtt_pass = "Van.bui6604";
-const char* mqtt_topic_sub = "vviet/out";
-const char* mqtt_topic_pub = "vviet/in";
+const char* mqtt_topic_sub = "vvan/out";
+const char* mqtt_topic_pub = "vvan/in";
 // ===== LED =====
 const int ledPin = 2;
 // ===== Blink WiFi =====
@@ -245,8 +245,8 @@ void loop() {
       lcd.print("Mo cua (RFID)");
       lcd.setCursor(0, 1);
       lcd.print("Nguoi mo: ");
-      if(ok1) lcd.print("Viet");
-      else if(ok2) lcd.print("Khang");
+      if(ok1) lcd.print("Van");
+      else if(ok2) lcd.print("Viet");
       mo_cua();
       mqtt_send("0");
       num_incorrect = 0;
